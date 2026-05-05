@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-navy antialiased;
     scroll-behavior: smooth;
   }
 }
