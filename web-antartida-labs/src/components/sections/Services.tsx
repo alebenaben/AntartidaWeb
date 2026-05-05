@@ -1,4 +1,4 @@
-import { Bot, Bug, CodeSquare, ArrowRight } from "lucide-react";
+import { Bot, Bug, Terminal, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Services() {
@@ -19,7 +19,7 @@ export default function Services() {
       id: "refactoring-agent",
       title: "Refactoring Agent",
       description: "Agente que recodifica aplicaciones legacy para homologarlas a un nuevo software de base. No desarrolla nuevas funcionalidades; solo adapta/homologa.",
-      icon: <CodeSquare className="w-10 h-10 text-navy" />,
+      icon: <Terminal className="w-10 h-10 text-navy" />,
     }
   ];
 
