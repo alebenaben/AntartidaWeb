@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -7,6 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-grid-slate-100/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-900/[0.04] dark:bg-bottom" style={{ maskImage: 'linear-gradient(to bottom, transparent, black)' }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
+          <Image src="/logo.png" alt="Antartida Labs Logo" width={100} height={100} className="mx-auto mb-8 object-contain drop-shadow-sm" />
           <h1 className="text-4xl md:text-6xl font-extrabold text-navy tracking-tight mb-6">
             Inteligencia Artificial <span className="text-gradient">del Sur</span>
           </h1>

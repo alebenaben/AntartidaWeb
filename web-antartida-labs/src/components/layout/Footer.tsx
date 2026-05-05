@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 text-white mb-4">
-              <div className="w-8 h-8 rounded-full bg-cyan flex items-center justify-center text-white font-bold">AL</div>
+              <Image src="/logo.png" alt="Antartida Labs Logo" width={32} height={32} className="object-contain brightness-0 invert" />
               <span className="font-bold text-xl tracking-tight">Antartida Labs</span>
             </Link>
             <p className="text-gray-400 max-w-sm">
