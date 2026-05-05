@@ -93,6 +93,8 @@ export async function POST(request: NextRequest) {
       "recepcionista-digital": "Recepcionista Digital",
       "qa-agent": "QA Agent",
       "refactoring-agent": "Refactoring Agent",
+      "consultoria-ia": "Consultoría Estratégica en IA",
+      "capacitacion-ia": "Educación y Capacitación",
       "otro": "Otro",
     };
 

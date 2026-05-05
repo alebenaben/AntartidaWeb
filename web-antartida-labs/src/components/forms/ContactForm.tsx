@@ -156,6 +156,8 @@ export default function ContactForm() {
           <option value="recepcionista-digital">Recepcionista Digital</option>
           <option value="qa-agent">QA Agent</option>
           <option value="refactoring-agent">Refactoring Agent</option>
+          <option value="consultoria-ia">Consultoría Estratégica en IA</option>
+          <option value="capacitacion-ia">Educación y Capacitación</option>
           <option value="otro">Otro</option>
         </select>
         {errors.serviceInterest && <p className="mt-1 text-sm text-red-500">{errors.serviceInterest.message}</p>}

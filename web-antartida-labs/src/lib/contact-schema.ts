@@ -5,7 +5,7 @@ export const contactFormSchema = z.object({
   company: z.string().max(100, "El nombre de la empresa es demasiado largo").optional(),
   email: z.string().email("Ingresá un email válido").max(120, "El email es demasiado largo"),
   phone: z.string().max(30, "El teléfono es demasiado largo").regex(/^[\d\s\+\-\(\)]*$/, "El teléfono contiene caracteres inválidos").optional(),
-  serviceInterest: z.enum(["recepcionista-digital", "qa-agent", "refactoring-agent", "otro"], {
+  serviceInterest: z.enum(["recepcionista-digital", "qa-agent", "refactoring-agent", "consultoria-ia", "capacitacion-ia", "otro"], {
     errorMap: () => ({ message: "Seleccioná un servicio de interés" }),
   }),
   message: z.string().min(10, "El mensaje debe tener al menos 10 caracteres").max(2000, "El mensaje es demasiado largo"),

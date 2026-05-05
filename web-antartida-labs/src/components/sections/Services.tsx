@@ -1,4 +1,4 @@
-import { Bot, Bug, Terminal, ArrowRight } from "lucide-react";
+import { Bot, Bug, Terminal, Lightbulb, GraduationCap, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Services() {
@@ -20,6 +20,18 @@ export default function Services() {
       title: "Refactoring Agent",
       description: "Agente que recodifica aplicaciones legacy para homologarlas a un nuevo software de base. No desarrolla nuevas funcionalidades; solo adapta/homologa.",
       icon: <Terminal className="w-10 h-10 text-navy" />,
+    },
+    {
+      id: "consultoria-ia",
+      title: "Consultoría Estratégica en IA",
+      description: "Evaluamos tus procesos de negocio y diseñamos una hoja de ruta personalizada para integrar agentes de IA maximizando tu ROI.",
+      icon: <Lightbulb className="w-10 h-10 text-cyan" />,
+    },
+    {
+      id: "capacitacion-ia",
+      title: "Educación y Capacitación",
+      description: "Programas de formación diseñados para que tu equipo adopte, opere y escale herramientas de inteligencia artificial con confianza.",
+      icon: <GraduationCap className="w-10 h-10 text-blue" />,
     }
   ];
 
@@ -33,7 +45,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.id} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all group flex flex-col h-full">
               <div className="w-16 h-16 rounded-xl bg-blue-light/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
