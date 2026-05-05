@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #0A1F44;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-accent bg-clip-text text-transparent;
+  }
+}
