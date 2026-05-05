@@ -47,20 +47,21 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all group flex flex-col h-full">
-              <div className="w-16 h-16 rounded-xl bg-blue-light/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <Link 
+              href={`/servicios/${service.id}`} 
+              key={service.id} 
+              className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full cursor-pointer"
+            >
+              <div className="w-16 h-16 rounded-xl bg-blue-light/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold text-navy mb-3">{service.title}</h3>
+              <h3 className="text-xl font-bold text-navy mb-3 group-hover:text-cyan transition-colors">{service.title}</h3>
               <p className="text-navy/70 mb-8 flex-grow">{service.description}</p>
               
-              {/* Note: Links to detail pages are hidden for Phase 1 as per spec, but could be un-commented later */}
-              {/* 
-              <Link href={`/servicios/${service.id}`} className="inline-flex items-center font-semibold text-cyan hover:text-blue transition-colors mt-auto">
-                Saber más <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-              */}
-            </div>
+              <span className="inline-flex items-center font-semibold text-cyan group-hover:text-blue transition-colors mt-auto">
+                Saber más <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </Link>
           ))}
         </div>
       </div>
